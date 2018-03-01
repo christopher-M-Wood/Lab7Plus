@@ -31,7 +31,7 @@ public class EditTweetActivity extends Activity{
 
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.secondary);
         bodyText = (EditText) findViewById(R.id.edit);
         Bundle bundle = getIntent().getExtras();
         if (bundle != null) {
@@ -42,7 +42,7 @@ public class EditTweetActivity extends Activity{
         else{
             input = new NormalTweet("Filler Tweet");
         }
-        bodyText.setText("Test Tweet!", TextView.BufferType.EDITABLE);
+        bodyText.setText(input.getMessage());
         Button doneButton = (Button) findViewById(R.id.done);
         doneButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
