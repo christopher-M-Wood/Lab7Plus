@@ -44,13 +44,6 @@ public class LonelyTwitterActivity extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
 
-		if (getIntent().getExtras() != null){
-			Gson gson = new Gson();
-			tweetList.add(gson.fromJson(getIntent().getExtras().getString(EXTRA_MESSAGE), Tweet.class));
-			adapter.notifyDataSetChanged();
-			saveInFile();
-		}
-
 		bodyText = (EditText) findViewById(R.id.body);
 		Button saveButton = (Button) findViewById(R.id.save);
 		Button clearButton = (Button) findViewById(R.id.clear);

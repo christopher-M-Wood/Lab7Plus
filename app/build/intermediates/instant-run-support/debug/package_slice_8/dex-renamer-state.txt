@@ -1,0 +1,4 @@
+#Wed Feb 28 23:25:02 MST 2018
+base.0=C\:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\66
+path.0=classes.dex
+renamed.0=classes.dex
