@@ -4,6 +4,10 @@
         "source": "C:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\src\\main\\res\\drawable-ldpi\\ic_launcher.png"
     },
     {
+        "merged": "C:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\build\\intermediates\\res\\merged\\debug\\layout_secondary.xml.flat",
+        "source": "C:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\src\\main\\res\\layout\\secondary.xml"
+    },
+    {
         "merged": "C:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\build\\intermediates\\res\\merged\\debug\\layout_main.xml.flat",
         "source": "C:\\Users\\critt\\Desktop\\CMPUT_301\\CMPUT301Lab7Plus\\app\\src\\main\\res\\layout\\main.xml"
     },

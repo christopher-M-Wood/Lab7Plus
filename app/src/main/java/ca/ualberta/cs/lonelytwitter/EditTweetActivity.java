@@ -16,7 +16,9 @@ public class EditTweetActivity extends Activity{
     public void onCreate(Bundle savedInstanceState){
         super.onCreate(savedInstanceState);
         Bundle bundle = getIntent().getExtras();
-        Gson gson = new Gson();
-        input = gson.fromJson(bundle.getString(EXTRA_MESSAGE),Tweet.class);
+        if (bundle != null) {
+            Gson gson = new Gson();
+            input = gson.fromJson(bundle.getString(EXTRA_MESSAGE), Tweet.class);
+        }
     }
 }

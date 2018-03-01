@@ -35,12 +35,21 @@ public class LonelyTwitterActivity extends Activity {
 	private ArrayList<Tweet> tweetList = new ArrayList<Tweet>();
 	private ArrayAdapter<Tweet> adapter;
 
-	public ListView getOldTweetsList(){return oldTweetsList;}
+	public ListView getOldTweetsList(){
+		return oldTweetsList;
+	}
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.main);
+
+		if (getIntent().getExtras() != null){
+			Gson gson = new Gson();
+			tweetList.add(gson.fromJson(getIntent().getExtras().getString(EXTRA_MESSAGE), Tweet.class));
+			adapter.notifyDataSetChanged();
+			saveInFile();
+		}
 
 		bodyText = (EditText) findViewById(R.id.body);
 		Button saveButton = (Button) findViewById(R.id.save);
